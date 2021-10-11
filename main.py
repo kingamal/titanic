@@ -20,6 +20,9 @@ print(df2.nunique())
 filtr = df['Survived']==1
 survivers = df[filtr] #nakładam filtr na calosc danych
 print(survivers)
+filtr2 = df['Age']>=18
+olders = df[filtr2]
+print(olders)
 #histogram na kolumnie Age
 survivers.hist(column='Age')
 plt.show()
